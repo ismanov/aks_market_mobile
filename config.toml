@@ -1,0 +1,133 @@
+[akeneoConfig]
+dbName = "aks_akeneo"
+
+  [akeneoConfig.api]
+  url = "http://116.203.43.25"
+
+  [akeneoConfig.client]
+  id = "3_334nuni6sesk4cksc0sw44g4kw0g04sckogsswosowgc0s8cs4"
+  secret = "3rmk5j2w46asoc0s808g4gwg88s4k8oo8go88o0080owgo4cwg"
+  username = "front_api"
+  password = "JHcv9490cfdfjs"
+
+[appConfig]
+host = "0.0.0.0"
+port = 3000
+
+[mongoConfig]
+uri = "mongodb://localhost:27017/"
+max = 100
+min = 10
+
+[catalogConfig]
+
+  [catalogConfig.b2b]
+  dbName = "aks_b2b"
+
+    [catalogConfig.b2b.categories]
+    root = "b2b"
+
+    [catalogConfig.b2b.price]
+    default = "4305385f3ac111e29878001517d28cb0"
+    primary = "14a86f7e3df811e2aedc001517d28cb0"
+  
+  [akeneoConfig.products]
+
+    [akeneoConfig.products.attributes]
+    yandexName = ["name"]
+    brand = ["1C_SKUBrand"]
+    code = ["1C_SKUCode"]
+    fullName = ["1C_SKUNameFull"]
+    name = ["1C_SKUName"]
+    description = ["product_description_from_old_site"]
+    recommendedPrice = ["recommendedprice"]
+    box = ["box"]
+    images = [
+      "1c_photo",
+      "parser_yandexmarket_yandeks_market_fotografiya_1",
+      "parser_yandexmarket_yandeks_market_fotografiya_10",
+      "parser_yandexmarket_yandeks_market_fotografiya_2",
+      "parser_yandexmarket_yandeks_market_fotografiya_3",
+      "parser_yandexmarket_yandeks_market_fotografiya_4",
+      "parser_yandexmarket_yandeks_market_fotografiya_5",
+      "parser_yandexmarket_yandeks_market_fotografiya_6",
+      "parser_yandexmarket_yandeks_market_fotografiya_7",
+      "parser_yandexmarket_yandeks_market_fotografiya_8",
+      "parser_yandexmarket_yandeks_market_fotografiya_9",
+      "photo1_from_old_site",
+      "photo2_from_old_site",
+      "photo3_from_old_site",
+      "photo4_from_old_site",
+      "site_upload",
+      "site_uploaded",
+      "site_uploaded_1",
+      "site_uploaded_2",
+      "site_uploaded_3",
+      "site_uploaded_4",
+      "site_uploaded_5",
+      "site_uploaded_6",
+      "site_uploaded_7",
+      "site_uploaded_8",
+      "site_uploaded_9"
+    ]
+
+    stocks = [
+      "01b7a3afe2d811e27d8ab499bac04a00",
+      "025f154be20c11e24b97b499bac04a00",
+      "229f32fd7c1c11e36f84b499bac04a00",
+      "311c80a8fe0f11e4438cb499bac04a00",
+      "3c014ff6e01d11e2fb9bb499bac04a00",
+      "3c014ffde01d11e2fb9bb499bac04a00",
+      "3c41af437a8c11e2be50001a9234d1c4",
+      "4305385d3ac111e29878001517d28cb0",
+      "4305385e3ac111e29878001517d28cb0",
+      "59ff7450067d11e4f884b499bac04a00",
+      "59ff745a067d11e4f884b499bac04a00",
+      "5fe136c8536611e3769fb499bac04a00",
+      "60944ff84c3711e3769fb499bac04a00",
+      "76a3d9a3585611e56783b499bac04a00",
+      "a34a2701eef711e43a87b499bac04a00",
+      "aba5c51fe01911e2fb9bb499bac04a00",
+      "aba5c520e01911e2fb9bb499bac04a00",
+      "aba5c521e01911e2fb9bb499bac04a00",
+      "aba5c526e01911e2fb9bb499bac04a00",
+      "aba5c528e01911e2fb9bb499bac04a00",
+      "c363c199cd6b11e48e9db499bac04a00",
+      "77388295d18711eaf097b499bac04a00",
+      "4d472093b79711ea8f80b499bac04a00",
+      "8751d092b54f11ead883b499bac04a00"
+    ]
+
+    prices = [
+      "0368b83bbbd011e2ac2f001a9234d1c4",
+      "0368b83cbbd011e2ac2f001a9234d1c4",
+      "0368b83dbbd011e2ac2f001a9234d1c4",
+      "14a86f7c3df811e2aedc001517d28cb0",
+      "14a86f7d3df811e2aedc001517d28cb0",
+      "14a86f7e3df811e2aedc001517d28cb0",
+      "14a86f823df811e2aedc001517d28cb0",
+      "14a86f833df811e2aedc001517d28cb0",
+      "4305385a3ac111e29878001517d28cb0",
+      "4305385f3ac111e29878001517d28cb0",
+      "9e0705342c1a11e84a97b499bac04a00"
+    ]
+
+    _ignore = [
+      "best_content",
+      "opisanie"
+    ]
+
+[mailConfig]
+host = "smtp.yandex.ru"
+port = 465
+
+  [mailConfig.auth]
+  user = "noreply@aks.market"
+  pass = "JJd9j_kkdfrkbn7"
+
+[smsConfig]
+
+  [smsConfig.api]
+  url = "https://sms.ru"
+  key = "EFC6D176-9490-0636-DC71-F079613D6235"
+  sender = "AKSGROUP"
